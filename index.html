@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>hello world</h1>
+
+    <button id="open">open</button>
+    <button id="menu">menu</button>
+    <button id="msg">msg</button>
+    <button id="new">new windows</button>
+    <button id="error-dialog">error dialog</button>
+    <button id="message-dialog">message dialog</button>
+    <button id="open-dialog">open dialog</button>
+    <button id="save-dialog">save dialog</button>
+    <button id="notification">notification</button>
+    <button id="pdf">pdf</button>
+
+    <a href="https://www.bing.com">bing</a>
+
+    <webview src='https://www.bing.com'> </webview>
+
+    <script>
+      require('./renderer/open.js')
+      require('./renderer/menu.js')
+      require('./renderer/msg.js')
+      require('./renderer/new-win.js')
+      require('./renderer/dialog.js')
+      require('./renderer/notification.js')
+      require('./renderer/link.js')
+      require('./renderer/clipboard.js')
+      require('./renderer/pdf.js')
+  </script>
+  </body>
+</html>

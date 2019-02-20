@@ -1,0 +1,16 @@
+{
+  "name": "electron-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "electron .",
+    "start": "npm run dev"
+  },
+  "author": "lipeihan",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^4.0.5",
+    "eslint": "^5.14.0"
+  }
+}
