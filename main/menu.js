@@ -5,6 +5,10 @@ let template = [
     label: 'one',
     submenu: [
       {
+        label: 'reload',
+        role: 'reload'
+      },
+      {
         label: 'two'
       },
       {
@@ -32,7 +36,7 @@ let menu = Menu.buildFromTemplate(template);
 
 Menu.setApplicationMenu(menu);
 
-app.dock.setMenu(menu);
+// app.dock.setMenu(menu);
 
 ipcMain.on('show-context-menu',(e)=>{
   const win = BrowserWindow.fromWebContents(e.sender);

@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+      #drag {
+        height: 200px;
+        background: lightcyan;
+      }
+    </style>
   </head>
   <body>
     <h1>hello world</h1>
 
+    <button id="read">read</button>
     <button id="open">open</button>
     <button id="menu">menu</button>
     <button id="msg">msg</button>
@@ -24,7 +31,10 @@
 
     <webview src='https://www.bing.com'> </webview>
 
+    <div id="drag"></div>
+
     <script>
+      require('./renderer/read.js')
       require('./renderer/open.js')
       require('./renderer/menu.js')
       require('./renderer/msg.js')
@@ -34,6 +44,7 @@
       require('./renderer/link.js')
       require('./renderer/clipboard.js')
       require('./renderer/pdf.js')
+      require('./renderer/drag.js')
   </script>
   </body>
 </html>
